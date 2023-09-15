@@ -25,12 +25,13 @@ export const Home = () => {
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
   const projectOne = useRef();
-  const projectTwo = useRef();
-  const projectThree = useRef();
+  // const projectTwo = useRef();
+  // const projectThree = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, details];
+    // const sections = [intro, projectOne, projectTwo, projectThree, details];
+    const sections = [intro, projectOne, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -68,9 +69,8 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Designer + Developer"
-        description="Design portfolio of Hamish Williams — a product designer working on web & mobile
-          apps with a focus on motion, experience design, and accessibility."
+        title="Lord"
+        description="Portfolio of Adwityaa Jha."
       />
       <Intro
         id="intro"
@@ -83,7 +83,7 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
+        title="Atrasa"
         description="Designing a platform to help educators build better online courseware"
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
@@ -98,7 +98,7 @@ export const Home = () => {
           ],
         }}
       />
-      <ProjectSummary
+      {/* <ProjectSummary
         id="project-2"
         alternate
         sectionRef={projectTwo}
@@ -122,8 +122,8 @@ export const Home = () => {
             },
           ],
         }}
-      />
-      <ProjectSummary
+      /> */}
+      {/* <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
@@ -142,7 +142,7 @@ export const Home = () => {
             },
           ],
         }}
-      />
+      /> */}
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
