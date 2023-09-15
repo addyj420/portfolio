@@ -20,9 +20,9 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Adwityaa Jha, a diligent Deutsche Bank Analyst based in the vibrant city of Mumbai, India. With a passion for technology and a penchant for problem-solving, my journey in the corporate world has been shaped by diverse experiences and impactful projects.
-      If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I am Adwityaa Jha, a diligent Deutsche Bank Analyst based in the vibrant city of Mumbai, India. 
+      With a passion for technology and a penchant for problem-solving, my journey in the corporate world has been shaped by diverse experiences and impactful projects.
+      If you are interested in the tools and software I use check out my <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m always down for hearing about new projects, so feel free to drop me a line.
@@ -50,14 +50,15 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content}>
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
+              {/* Make correct email address here */}
               <Button
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                href="mailto:max.mustermann@example.com"
                 icon="send"
               >
-                Send me a message
+                Drop me an email
               </Button>
             </div>
             <div className={styles.column}>
