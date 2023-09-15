@@ -9,20 +9,20 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Developer', 'Prototyper', 'Animator', 'Illustrator', 'Modder'];
+const disciplines = ['Developer', 'Artist', 'Analyst'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
   const projectOne = useRef();
-  // const projectTwo = useRef();
+  const projectTwo = useRef();
   // const projectThree = useRef();
   const details = useRef();
 
   useEffect(() => {
     // const sections = [intro, projectOne, projectTwo, projectThree, details];
-    const sections = [intro, projectOne, details];
+    const sections = [intro, projectOne, projectTwo, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -78,6 +78,25 @@ export const Home = () => {
         description="Designing a platform to help educators build better online courseware"
         buttonText="View project"
         // buttonLink="/projects/smart-sparrow"
+        model={{
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
+          textures: [
+            {
+              srcSet: [sprTexture, sprTextureLarge],
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-2"
+        sectionRef={projectTwo}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={1}
+        title="Atrasa-2"
+        description="Test"
+        buttonText="View project"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',

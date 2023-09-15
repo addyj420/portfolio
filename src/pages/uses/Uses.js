@@ -33,7 +33,7 @@ export const Uses = () => {
         />
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -110,57 +110,6 @@ export const Uses = () => {
                   </ListItem>
                 </List>
               </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection padding="none" className={styles.section}>
-          <ProjectSectionContent>
-            <ProjectTextRow stretch width="m">
-              <ProjectSectionHeading>Hardware</ProjectSectionHeading>
-              <Table>
-                <TableBody>
-                  <TableRow>
-                    <TableHeadCell>CPU</TableHeadCell>
-                    <TableCell>AMD Ryzen 5800x</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>GPU</TableHeadCell>
-                    <TableCell>MSI Gaming X Trio RTX 3080</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Memory</TableHeadCell>
-                    <TableCell>GSkill 32GB DDR4 3600mhz CAS 18</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Motherboard</TableHeadCell>
-                    <TableCell>MSI B550 Tomahawk</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Logitech MX Keys</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″ (2022 M1 Max)</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
-                  </TableRow>
-                </TableBody>
-              </Table>
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
