@@ -69,7 +69,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
-                  {`Product Manager + ${introLabel}`}
+                  {`Business Strategy + ${introLabel}`}
                 </VisuallyHidden>
                 <span aria-hidden className={styles.row}>
                   <span
@@ -77,7 +77,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                     data-status={status}
                     style={cssProps({ delay: tokens.base.durationXS })}
                   >
-                    Product Manager
+                    Business Strategy
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>

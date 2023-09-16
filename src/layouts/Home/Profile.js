@@ -20,12 +20,11 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am Adwityaa Jha, a diligent Deutsche Bank Analyst based in the vibrant city of Mumbai, India. 
-      With a passion for technology and a penchant for problem-solving, my journey in the corporate world has been shaped by diverse experiences and impactful projects.
-      If you are interested in the tools and software I use check out my <Link href="/uses">uses page</Link>.
+      I am Adwityaa Jha, who has a passion for technology, and finance and a penchant for problem-solving, my journey in the corporate world has been shaped by diverse experiences and impactful projects. My personal project is called “Atrasa” which supports women's empowerment and upliftment. For further details about my skillsets check out my
+      <Link href="/uses"> skills page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m always down for hearing about new projects, so feel free to drop me a line.
+      I am always looking to hear about new projects, and connect with new people so feel free to drop me a line.
     </Text>
   </Fragment>
 );
@@ -55,7 +54,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="mailto:max.mustermann@example.com"
+                href="mailto:ajha3110@gmail.com"
                 icon="send"
               >
                 Drop me an email
