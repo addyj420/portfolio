@@ -23,14 +23,14 @@ export const Uses = () => {
   return (
     <Fragment>
       <Meta
-        title="Uses"
+        title="Tools"
         description="A list of hardware and software I use to do my thing"
       />
       <ProjectContainer className={styles.uses}>
         <DisplacementSphere/>
         <ProjectHeader
           title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things."
+          description="A somewhat comprehensive list of tools, apps and more that I use on a daily basis to design, code and manage things."
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -40,21 +40,7 @@ export const Uses = () => {
                 <List>
                   <ListItem>
                     <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
-                  </ListItem>
-                  <ListItem>
-                    Any motion graphics I create are created in Adobe After Effects. So
-                    far I haven’t found a non-Adobe product that’s as good. If anyone has
-                    suggestions please <Link href="/contact">message me</Link>.
-                  </ListItem>
-                  <ListItem>
-                    For any 3D models I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    UI design these days.
                   </ListItem>
                 </List>
               </ProjectSectionText>
@@ -72,9 +58,6 @@ export const Uses = () => {
                     <Link href="https://code.visualstudio.com/">Visual Studio Code</Link>{' '}
                     as my text editor, with the Atom One Dark theme and Operator Mono as
                     my typeface of choice.
-                  </ListItem>
-                  <ListItem>
-                    Firefox is my main browser for both development and general use.
                   </ListItem>
                   <ListItem>
                     <Link href="https://reactjs.org/">React</Link> is my front end
@@ -96,14 +79,6 @@ export const Uses = () => {
                     For Javascript animations I use{' '}
                     <Link href="https://www.framer.com/motion/">Framer Motion</Link>, it’s
                     a great way to add spring animations to React and three.js.
-                  </ListItem>
-                  <ListItem>
-                    For building and testing UI components in isolation I use{' '}
-                    <Link href="https://storybook.js.org/">Storybook</Link>. Check out the{' '}
-                    <Link href="https://storybook.hamishw.com">
-                      storybook for this website
-                    </Link>
-                    .
                   </ListItem>
                 </List>
               </ProjectSectionText>
