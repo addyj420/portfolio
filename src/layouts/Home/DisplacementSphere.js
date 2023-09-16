@@ -99,8 +99,8 @@ export const DisplacementSphere = props => {
     const ambientLight = new AmbientLight(colorWhite, themeId === 'light' ? 0.8 : 0.1);
 
     dirLight.position.z = 200;
-    dirLight.position.x = 100;
-    dirLight.position.y = 100;
+    dirLight.position.x = 150;
+    dirLight.position.y = 80;
 
     lights.current = [dirLight, ambientLight];
     scene.current.background = new Color(...rgbToThreeColor(rgbBackground));
@@ -125,14 +125,14 @@ export const DisplacementSphere = props => {
     }
 
     if (width <= media.mobile) {
-      sphere.current.position.x = 14;
+      sphere.current.position.x = 10;
       sphere.current.position.y = 10;
     } else if (width <= media.tablet) {
-      sphere.current.position.x = 18;
+      sphere.current.position.x = 10;
       sphere.current.position.y = 14;
     } else {
-      sphere.current.position.x = 22;
-      sphere.current.position.y = 16;
+      sphere.current.position.x = 10;
+      sphere.current.position.y = 20;
     }
   }, [reduceMotion, windowSize]);
 
@@ -165,8 +165,8 @@ export const DisplacementSphere = props => {
       if (uniforms.current !== undefined) {
         uniforms.current.time.value = 0.00005 * (Date.now() - start.current);
       }
-
-      sphere.current.rotation.z += 0.001;
+  
+      sphere.current.rotation.z *= Math.sin(Math.random()*10);
       sphere.current.rotation.x = rotationX.get();
       sphere.current.rotation.y = rotationY.get();
 
@@ -185,7 +185,7 @@ export const DisplacementSphere = props => {
   }, [isInViewport, reduceMotion, rotationX, rotationY]);
 
   return (
-    <Transition in timeout={3000}>
+    <Transition in timeout={2000}>
       {visible => (
         <canvas
           aria-hidden
