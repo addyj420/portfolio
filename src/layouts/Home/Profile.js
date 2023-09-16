@@ -20,7 +20,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I am Adwityaa Jha, who has a passion for technology, and finance and a penchant for problem-solving, my journey in the corporate world has been shaped by diverse experiences and impactful projects. My personal project is called “Atrasa” which supports women's empowerment and upliftment. For further details about my skillsets check out my
+      I am Adwityaa Jha, who has a passion for technology, and finance and a penchant for problem-solving, my journey in the corporate world has been shaped by diverse experiences and impactful projects. My personal project is called Atrasa which supports women empowerment. For further details about my skillsets check out my
       <Link href="/uses"> skills page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
