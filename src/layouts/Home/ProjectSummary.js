@@ -114,6 +114,10 @@ export const ProjectSummary = ({
           </div>
         </>
       )}
+      {model.type === 'none' && (
+        <>
+        </>
+      )}
     </div>
   );
 

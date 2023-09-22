@@ -13,6 +13,7 @@ import {
 import { Fragment } from 'react';
 import styles from './Uses.module.css';
 import dynamic from 'next/dynamic';
+import { Link } from 'components/Link';
 
 const DisplacementSphere = dynamic(() =>
   import('layouts/Home/DisplacementSphere').then(mod => mod.DisplacementSphere)
@@ -29,7 +30,7 @@ export const Uses = () => {
         <DisplacementSphere />
         <ProjectHeader
           title="Skills"
-          description="A somewhat comprehensive list of tools, apps and more that I use on a daily basis to design, code and manage things."
+          description="Welcome to my portfolio! I thrive on a carefully curated toolkit of tools and skills that empower me to design and efficiently manage projects on a daily basis. Here is a glimpse into my indispensable arsenal"
         />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
@@ -75,7 +76,7 @@ export const Uses = () => {
             <ProjectSectionHeading>Others</ProjectSectionHeading>
             <ProjectSectionText as="div">
               <List>
-                <ListItem>Written communication (check out my medium blogs)</ListItem>
+                <ListItem>Written communication (check out my <Link href="https://medium.com/@adwitya">medium blogs</Link>)</ListItem>
                 <ListItem>Logo Designing (check out my Behance portfolio)</ListItem>
               </List>
             </ProjectSectionText>
