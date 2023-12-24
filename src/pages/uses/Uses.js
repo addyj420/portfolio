@@ -77,7 +77,7 @@ export const Uses = () => {
             <ProjectSectionText as="div">
               <List>
                 <ListItem>Written communication (check out my <Link href="https://medium.com/@adwitya">medium blogs</Link>)</ListItem>
-                <ListItem>Logo Designing (check out my Behance portfolio)</ListItem>
+                <ListItem>Logo Designing (check out <Link href="https://www.behance.net/adwityaajha"> my Behance portfolio</Link)</ListItem>
               </List>
             </ProjectSectionText>
           </ProjectTextRow>
