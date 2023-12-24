@@ -60,7 +60,7 @@ export const Home = () => {
   return (
     <div className={styles.home}>
       <Meta
-        title="Lord"
+        title="BizStrat"
         description="Portfolio of Adwityaa Jha."
       />
       <Intro
@@ -74,12 +74,10 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Atrasa"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        title="Deutsche Bank "
+        description="Implementing Agile methodologies in the investment banking sector while harnessing the inevitability of change rather than resisting it"
         model={{
-          type: 'laptop',
+          type: 'none',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
@@ -93,12 +91,11 @@ export const Home = () => {
         id="project-2"
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={1}
-        title="Atrasa-2"
-        description="Test"
-        buttonText="View project"
+        index={2}
+        title="Atrasa"
+        description="Developing a platform for connecting underprivileged South Asian women artisans to the world."
         model={{
-          type: 'laptop',
+          type: 'none',
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
